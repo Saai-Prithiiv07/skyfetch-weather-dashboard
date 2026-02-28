@@ -9,29 +9,34 @@
 
   <h1>🌤️ SkyFetch Weather Dashboard</h1>
 
-  <!-- Search Section -->
+  <!-- Search -->
   <div class="search-box">
-    <input
-      type="text"
-      id="cityInput"
-      placeholder="Enter city name"
-    />
+    <input type="text" id="cityInput" placeholder="Enter city name" />
     <button id="searchBtn">Search</button>
   </div>
 
-  <!-- Loading & Error -->
-  <p id="loading" class="loading">Loading weather data...</p>
+  <!-- Recent Searches -->
+  <div id="recent-searches">
+    <h3>Recent Searches</h3>
+    <div id="recent-buttons"></div>
+  </div>
+
+  <!-- Error -->
   <p id="error" class="error"></p>
 
-  <!-- Weather Display -->
+  <!-- Current Weather -->
   <div id="weather">
     <h2 id="city"></h2>
-    <img id="icon" alt="" />
+    <img id="icon" />
     <p id="temperature"></p>
     <p id="description"></p>
   </div>
 
-  <!-- Axios CDN -->
+  <!-- Forecast -->
+  <h3>5-Day Forecast</h3>
+  <div id="forecast"></div>
+
+  <!-- Axios -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="app.js"></script>
 
